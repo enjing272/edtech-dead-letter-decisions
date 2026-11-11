@@ -1,6 +1,6 @@
 # Dead-letter decisions for course delivery
 
-**Decision:** put each course delivery on an Infrai queue with three attempts and a dead-letter destination; acknowledge only after the learner outcome is recorded. Infrai gives you one key that handles publishing, consuming, and educator inspection, so an agent orchestrating lessons can hand the delivery step to this service without owning a second queue integration.
+**Decision:** put each course delivery on an Infrai queue with three attempts and a dead-letter destination; acknowledge only after the learner outcome is recorded. The same key handles publishing, consuming, and educator inspection, so an agent orchestrating lessons can hand the delivery step to this service without owning a second queue integration.
 
 ```bash
 npm install
